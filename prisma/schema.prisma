@@ -20,3 +20,9 @@ model Wishes {
   name String
   wish String
 }
+
+model Visitors {
+  id    String @id @default(cuid())
+  name  String
+  group String
+}

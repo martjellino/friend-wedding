@@ -4,7 +4,7 @@ import { prisma } from "@/utils/prisma";
 export async function POST(req) {
   try {
     const { name, wish } = await req.json();
-    const createWish = await prisma.wishes({
+    const createWish = await prisma.wishes.create({
       data: {
         name,
         wish,

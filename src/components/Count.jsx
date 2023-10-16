@@ -4,7 +4,6 @@ export const Count = () => {
   return (
     <div class="max-w-5xl space-x-2 mx-auto flex justify-center items-center">
       <a
-        href="#"
         class="flex w-20 p-2 bg-mallard-900 border rounded-lg shadow justify-center items-center  col-start-2"
       >
         <div className="flex-row">
@@ -13,7 +12,6 @@ export const Count = () => {
         </div>
       </a>
       <a
-        href="#"
         class="flex w-20 p-2 bg-mallard-900 border rounded-lg shadow justify-center items-center"
       >
         <div className="flex-row">
@@ -24,7 +22,6 @@ export const Count = () => {
         </div>
       </a>
       <a
-        href="#"
         class="flex w-20 p-2 bg-mallard-900 border rounded-lg shadow justify-center items-center"
       >
         <div className="flex-row">
@@ -33,7 +30,6 @@ export const Count = () => {
         </div>
       </a>
       <a
-        href="#"
         class="flex w-20 p-2 bg-mallard-900 border rounded-lg shadow justify-center items-center"
       >
         <div className="flex-row">

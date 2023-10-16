@@ -58,9 +58,8 @@ export const AddWish = () => {
           </div>
 
           <button
-            type="submit"
             onClick={handleSubmit}
-            className="w-full text-white bg-mallard-900 hover:bg-mallard-950 focus:ring-4 focus:outline-none focus:ring-mallard-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
+            className="w-full text-white bg-mallard-900 hover:bg-mallard-950 focus:ring-4 focus:outline-none focus:ring-mallard-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mb-6"
           >
             Add Your Best Wish!
           </button>

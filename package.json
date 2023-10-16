@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@prisma/client": "^5.4.2",
+    "@radix-ui/react-scroll-area": "^1.0.5",
     "flowbite": "^1.8.1",
     "next": "13.5.4",
     "prisma": "^5.4.2",

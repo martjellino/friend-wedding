@@ -5,6 +5,7 @@ import { Page3 } from "@/components/Page3";
 import { Page4 } from "@/components/Page4";
 import { Page5 } from "@/components/Page5";
 import { Page6 } from "@/components/Page6";
+import { Page7 } from "@/components/Page7";
 
 async function getWishes() {
   const res = await fetch("http://localhost:3000/api/v1/wish", {
@@ -19,12 +20,14 @@ export default async function Home() {
   const wishes = await getWishes();
   return (
     <div className="">
-      {/* <Page1 />
+      <Page1 />
       <Page2 />
       <Page3 />
       <Page4 />
-      <Page5 /> */}
+      <Page5 />
+      <Page7 />
       <Page6 />
+      {/* <Page7 /> */}
       {/* <div>
         <a
           href="#"

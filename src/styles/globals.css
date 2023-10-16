@@ -37,6 +37,10 @@
   vertical-align: middle;
 }
 
+.wallet {
+  display: inline-block;
+}
+
 .bg-1 {
   background-image: url("/gambar1.png");
   background-size: cover;
@@ -111,6 +115,10 @@
 
 .svg-bg-6 {
   background-image: url("/bahan6.svg");
+}
+
+.svg-bg-7 {
+  background-image: url("/bahan7.svg");
 }
 
 @media screen and (max-width: 767px) {
