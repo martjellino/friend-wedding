@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: Bell MT;
+    src: url(bell-mt.ttf) format("ttf");
+  }
+}
+
+.font-color {
+  color: #2b3a1d;
+}
+
+.font-bell {
+  font-family: Bell MT;
+}
+
+.image-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid {
+  justify-content: center;
+  gap: 10px;
+}
+
+.block {
+  margin: 0 auto;
+}
+
+.mt-16 svg {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.bg-1 {
+  background-image: url("/gambar1.png");
+  background-size: cover;
+  background-position: center;
+  width: 767px;
+  height: 1363px;
+}
+
+.bg-2 {
+  background-image: url("/gambar2.png");
+  /* background-size: cover;
+  background-position: center;
+  width: 767px;
+  height: 1363px; */
+}
+
+.bg-3 {
+  background-image: url("/gambar3.png");
+  /* background-size: cover;
+  background-position: center;
+  width: 767px;
+  height: 1363px; */
+}
+
+.bg-4 {
+  background-image: url("/gambar4.png");
+  /* background-size: cover;
+  background-position: center;
+  width: 767px;
+  height: 1363px; */
+}
+
+.bg-5 {
+  background-image: url("/gambar5.png");
+  /* background-size: cover;
+  background-position: center;
+  width: 767px;
+  height: 1363px; */
+}
+
+.bg-6 {
+  background-image: url("/gambar6.png");
+  /* background-size: cover;
+  background-position: center;
+  width: 767px;
+  height: 1363px; */
+}
+
+.svg-bg-1 {
+  background-image: url("/bahan11.svg");
+  /* background-size: cover;
+    background-position: center;
+    width: 767px;
+    height: 1363px; */
+}
+
+.svg-bg-2 {
+  background-image: url("/bahan2.svg");
+}
+
+.svg-bg-3 {
+  background-image: url("/bahan3.svg");
+}
+
+.svg-bg-4 {
+  background-image: url("/bahan4.svg");
+}
+
+.svg-bg-5 {
+  background-image: url("/bahan5.svg");
+}
+
+.svg-bg-6 {
+  background-image: url("/bahan6.svg");
+}
+
+@media screen and (max-width: 767px) {
+}
