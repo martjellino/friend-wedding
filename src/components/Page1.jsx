@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 
+
 export const Page1 = () => {
   return (
     <div className="max-w-3xl m-auto svg-bg-1 bg-center bg-no-repeat h-screen p-4 text-center font-color font-bell">
@@ -21,6 +22,14 @@ export const Page1 = () => {
         <h1 className="font-bold">Dear</h1>
         <h1 className="mt-4">OKI AND ERIN</h1>
         <p className="-mt-2 font-extrabold">━━━━━━━━━</p>
+      </div>
+      <div className="mt-2">
+        <button
+          type="button"
+          className="animate-bounce focus:outline-none text-white bg-mallard-700 hover:bg-mallard-800 focus:ring-4 focus:ring-mallard-300 font-medium rounded-lg text-sm px-5 py-2.5"
+        >
+          Click to Open Invitation
+        </button>
       </div>
     </div>
   );

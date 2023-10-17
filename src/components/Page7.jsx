@@ -63,16 +63,16 @@ export const Page7 = () => {
                   className="absolute inset-0  mt-[82px]"
                   style={{ zIndex: 1 }}
                 >
-                  <div className="text-blue-800 font-normal text-[10px] text-left ml-6">
+                  <div className="text-blue-800 font-normal text-[10px] text-left ml-6 font-mono">
                     Atas Nama:
                   </div>
-                  <div className="text-blue-800 font-semibold text-[12px] text-left ml-6">
+                  <div className="text-blue-800 font-semibold text-[12px] text-left ml-6 font-mono -mt-1">
                     RIFQI AHMAD NAUFAL
                   </div>
-                  <div className="text-blue-800 font-normal text-[10px] text-left ml-6 mt-1">
+                  <div className="text-blue-800 font-normal text-[10px] text-left ml-6 mt-1 font-mono">
                     No. Rek:
                   </div>
-                  <div className="text-blue-800 font-semibold text-[12px] text-left ml-6">
+                  <div className="text-blue-800 font-semibold text-[12px] text-left ml-6 font-mono -mt-1">
                     3790286633
                   </div>
                 </div>
@@ -89,16 +89,16 @@ export const Page7 = () => {
                   className="absolute inset-0 mt-[82px]"
                   style={{ zIndex: 1 }}
                 >
-                  <div className="text-blue-800 font-normal text-[10px] text-left ml-6">
+                  <div className="text-blue-800 font-normal text-[10px] text-left ml-6 font-mono">
                     Atas Nama:
                   </div>
-                  <div className="text-blue-800 font-semibold text-[12px] text-left ml-6">
+                  <div className="text-blue-800 font-semibold text-[12px] text-left ml-6 font-mono -mt-1">
                     SENDY AYU AULIA
                   </div>
-                  <div className="text-blue-800 font-normal text-[10px] text-left ml-6 mt-1">
+                  <div className="text-blue-800 font-normal text-[10px] text-left ml-6 mt-1 font-mono">
                     No. Rek:
                   </div>
-                  <div className="text-blue-800 font-semibold text-[12px] text-left ml-6">
+                  <div className="text-blue-800 font-semibold text-[12px] text-left ml-6 font-mono -mt-1">
                     7151594925
                   </div>
                 </div>
@@ -118,11 +118,11 @@ export const Page7 = () => {
           </div>
         )}
       </div>
-      <div className="mt-36">
+      {/* <div className="mt-36">
         <div>
             <p>&copy; 2023 Website. All rights reserved.</p>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
