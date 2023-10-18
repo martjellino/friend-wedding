@@ -12,6 +12,7 @@ async function getWishes() {
 }
 
 export const Page6 = async (props) => {
+  console.log(props)
   const { name } = props;
   const wishes = await getWishes();
   // console.log(wishes);
