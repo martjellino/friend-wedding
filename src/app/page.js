@@ -17,9 +17,15 @@ async function getVisitorById(id) {
   return data;
 }
 
-export default async function Home({ id }) {
+export default async function Home(params) {
+  console.log(params)
+  const {searchParams} = params
+  const {id} = searchParams
+  console.log(id)
   const theVisitor = await getVisitorById(id);
   console.log(theVisitor)
+  const { name } = theVisitor
+  //console.log(theVisitor)
   return (
     <div className="bg-#e4b8ae">
       <div className="max-w-3xl m-auto svg-bg-1 bg-center bg-no-repeat h-screen p-4 text-center font-color font-bell">
@@ -43,7 +49,7 @@ export default async function Home({ id }) {
 
         <div className="mt-16 font-bold">
           <h1 className="font-bold">Dear</h1>
-          <h1 className="mt-4">OKI AND ERIN</h1>
+          <h1 className="mt-4">{name}</h1>
           <p className="-mt-2 font-extrabold">━━━━━━━━━</p>
         </div>
         <div className="mt-2">
@@ -60,7 +66,11 @@ export default async function Home({ id }) {
       <Page4 />
       <Page5 />
       <Page7 />
-      <Page6 />
+      <Page6 name={name}/>
     </div>
   );
 }
+
+// just tested
+// just tested 
+// just tested 

@@ -12,6 +12,9 @@ export async function GET(req, { params }) {
     if (!visitor) {
       return NextResponse.json(
         {
+          data: {
+            name: "~Maaf, tak diundang~"
+          },
           message: "Visitor is not found!",
         },
         { status: 404 }

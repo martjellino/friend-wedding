@@ -16,9 +16,10 @@ datasource db {
 }
 
 model Wishes {
-  id   String @id @default(cuid())
-  name String
-  wish String
+  id        String   @id @default(cuid())
+  name      String
+  wish      String
+  createdAt DateTime @default(now())
 }
 
 model Visitors {

@@ -3,8 +3,10 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 
-export const AddWish = () => {
-  const [name, setName] = useState("");
+export const AddWish = (props) => {
+  const {namewish} = props
+
+  const [name, setName] = useState(namewish);
   const [wish, setWish] = useState("");
   const router = useRouter();
 
@@ -20,7 +22,7 @@ export const AddWish = () => {
         wish,
       }),
     });
-    setName("");
+    setName(namewish);
     setWish("");
     router.refresh();
   };
@@ -40,6 +42,7 @@ export const AddWish = () => {
               className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-mallard-500 focus:border-mallard-500 block w-full"
               placeholder="Your Name"
               required
+              readOnly
             />
           </div>
           <div>

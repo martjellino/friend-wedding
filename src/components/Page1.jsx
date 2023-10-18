@@ -1,6 +1,14 @@
 "use client";
 import Image from "next/image";
 
+async function getVisitor() {
+  const res = await fetch("http://localhost:3000/api/v1/visitor/clnsk36j6002vv0ckzqo9zj10", {
+    cache: "no-cache",
+  });
+  const { data } = await res.json();
+  console.log(data);
+  return data;
+}
 
 export const Page1 = () => {
   return (

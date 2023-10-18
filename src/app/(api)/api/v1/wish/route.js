@@ -28,7 +28,8 @@ export async function POST(req) {
 
 export async function GET() {
   try {
-    const res = await prisma.wishes.findMany();
+    //const res = await prisma.wishes.findMany();
+    const res = await prisma.$queryRaw`SELECT id, name, wish, "createdAt" FROM "Wishes" ORDER BY "createdAt" DESC`
     return NextResponse.json(
       {
         data: res,

@@ -27,31 +27,31 @@ export const Count = () => {
     return () => clearInterval(intervalId);
   }, []);
   return (
-    <div class="max-w-5xl space-x-2 mx-auto flex justify-center items-center">
+    <div className="max-w-5xl space-x-2 mx-auto flex justify-center items-center">
       <a
-        class="flex w-20 p-2 bg-mallard-900 border rounded-lg shadow justify-center items-center  col-start-2"
+        className="flex w-20 p-2 bg-mallard-900 border rounded-lg shadow justify-center items-center  col-start-2"
       >
         <div className="flex-row">
         <p className="text-5xl font-semibold tracking-tight text-white font-mono">{days}</p>
-        <p class="font-normal text-white">Days</p>
+        <p className="font-normal text-white">Days</p>
         </div>
       </a>
       <a
-        class="flex w-20 p-2 bg-mallard-900 border rounded-lg shadow justify-center items-center"
+        className="flex w-20 p-2 bg-mallard-900 border rounded-lg shadow justify-center items-center"
       >
         <div className="flex-row">
           <p className="text-5xl font-extrabold tracking-tight text-white font-mono">
           {hours}
           </p>  
-          <p class="font-normal text-white ">Hours</p>
+          <p className="font-normal text-white ">Hours</p>
         </div>
       </a>
       <a
-        class="flex w-20 p-2 bg-mallard-900 border rounded-lg shadow justify-center items-center"
+        className="flex w-20 p-2 bg-mallard-900 border rounded-lg shadow justify-center items-center"
       >
         <div className="flex-row">
         <p className="text-5xl font-extrabold tracking-tight text-white font-mono">{minutes}</p>
-        <p class="font-normal text-white">Minutes</p>
+        <p className="font-normal text-white">Minutes</p>
         </div>
       </a>
       <a
@@ -59,7 +59,7 @@ export const Count = () => {
       >
         <div className="flex-row">
         <p className="text-5xl font-extrabold tracking-tight text-white font-mono">{seconds}</p>
-        <p class="font-normal text-white">Seconds</p>
+        <p className="font-normal text-white">Seconds</p>
         </div>
       </a>
 
