@@ -1,7 +1,6 @@
 "use client";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import { userAgent } from "next/server";
 import { useState } from "react";
 
 export const Page7 = () => {
@@ -118,11 +117,6 @@ export const Page7 = () => {
           </div>
         )}
       </div>
-      {/* <div className="mt-36">
-        <div>
-            <p>&copy; 2023 Website. All rights reserved.</p>
-        </div>
-      </div> */}
     </div>
   );
 };

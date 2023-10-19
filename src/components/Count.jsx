@@ -62,7 +62,6 @@ export const Count = () => {
         <p className="font-normal text-white">Seconds</p>
         </div>
       </a>
-
     </div>
   );
 };
