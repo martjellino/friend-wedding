@@ -3,7 +3,7 @@
 import { AddWish } from "./AddWish";
 
 async function getWishes() {
-  const res = await fetch("http://localhost:3000/api/v1/wish", {
+  const res = await fetch("/api/v1/wish", {
     cache: "no-cache",
   });
   const { data } = await res.json();
