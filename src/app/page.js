@@ -8,7 +8,7 @@ import { Page7 } from "@/components/Page7";
 import Image from "next/image";
 
 async function getVisitorById(id) {
-  const res = await fetch(`/api/v1/visitor/${id}`, {
+  const res = await fetch(`http://localhost:3000/api/v1/visitor/${id}`, {
     cache: "no-cache",
   });
   const { data } = await res.json();
@@ -17,13 +17,13 @@ async function getVisitorById(id) {
 }
 
 export default async function Home(params) {
-  console.log(params)
-  const {searchParams} = params
-  const {id} = searchParams
-  console.log(id)
+  console.log(params);
+  const { searchParams } = params;
+  const { id } = searchParams;
+  console.log(id);
   const theVisitor = await getVisitorById(id);
-  console.log(theVisitor)
-  const { name } = theVisitor
+  console.log(theVisitor);
+  const { name } = theVisitor;
   //console.log(theVisitor)
   return (
     <div className="bg-#e4b8ae">
@@ -54,9 +54,9 @@ export default async function Home(params) {
         <div className="mt-2">
           <button
             type="button"
-            className="animate-bounce focus:outline-none text-white bg-mallard-700 hover:bg-mallard-800 focus:ring-4 focus:ring-mallard-300 font-medium rounded-lg text-sm px-5 py-2.5"
+            className="tailwind-style px-5 py-2.5 rounded-full"
           >
-            Click to Open Invitation
+            Click to Open Invitation<span className="shine"></span>
           </button>
         </div>
       </div>
@@ -65,11 +65,11 @@ export default async function Home(params) {
       <Page4 />
       <Page5 />
       <Page7 />
-      <Page6 name={name}/>
+      <Page6 name={name} />
     </div>
   );
 }
 
 // just tested
-// just tested 
-// just tested 
+// just tested
+// just tested

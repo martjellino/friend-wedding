@@ -9,6 +9,39 @@
   }
 }
 
+:root {
+    --duration: 3s;
+    --easing: linear;
+    --delay: 0s;
+}
+
+.tailwind-style {
+    position: relative;
+    color: white;
+    background-color: #5a812f;
+    overflow: hidden;
+}
+.shine {
+    position: absolute;
+    top: 0; left: 0;
+    width: 300px;
+    height: 100%;
+    color: rgba(255, 255, 255, 0);
+    background-color: rgba(255, 255, 255,0);
+    background-image: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0) 25%,
+        rgba(255, 255, 255, .5) 50%,
+        rgba(255, 255, 255, 0) 75%
+    );
+    transform: skewX(-20deg) translateX(-100%);
+    animation: var(--duration) var(--easing) var(--delay) infinite forwards shine;
+}
+
+@keyframes shine { 
+    20%, 100% { transform: translateX(150%); }
+}
+
 .font-color {
   color: #2b3a1d;
 }
