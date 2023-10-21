@@ -2,27 +2,25 @@
 
 export const Page5 = () => {
   return (
-    <div className="max-w-3xl m-auto svg-bg-5 bg-center bg-no-repeat h-screen p-4 text-center font-color font-bell">
+    <div className="w-full bg-image-5 bg-cover bg-center bg-no-repeat h-screen p-4 text-center font-color font-bell">
       <div>
         <p className="mt-48 font-extrabold text-5xl">Our Event</p>
       </div>
-      <div className="grid grid-cols-4 mt-10">
-        <div className="col-start-2">
+      <div className="grid grid-cols-2 mt-10">
+        <div>
           <a class="block max-w-sm">
-            <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900">
-              AKAD
-            </h5>
+            <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900">AKAD</h5>
             <p class="text-gray-900 text-6xl font-semibold">9:00</p>
             <p class="text-gray-900 text-xl font-semibold">━━</p>
             <p class="text-gray-900 text-6xl font-semibold">10:00</p>
-            <p class="text-gray-900 text-xs	font-semibold"><sup>*</sup>Family Only</p>
+            <p class="text-gray-900 text-xs	font-semibold">
+              <sup>*</sup>Family Only
+            </p>
           </a>
         </div>
-        <div className="col-start-3">
+        <div>
           <a class="block max-w-sm">
-            <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900">
-              RECEPTION
-            </h5>
+            <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900">RECEPTION</h5>
             <p class="text-gray-900 text-6xl font-semibold">11:00</p>
             <p class="text-gray-900 text-xl font-semibold">━━</p>
             <p class="text-gray-900 text-6xl font-semibold">14:00</p>
@@ -53,10 +51,7 @@ export const Page5 = () => {
       </div>
       <div className="mt-8 justify-center items-center">
         <a href="https://maps.app.goo.gl/4PhvwiDaSQt99rET6" target="_blank">
-          <button
-            type="button"
-            class="focus:outline-none text-white bg-mallard-900 hover:bg-mallard-950 rounded-lg px-5 py-2.5"
-          >
+          <button type="button" class="focus:outline-none text-white bg-mallard-900 hover:bg-mallard-950 rounded-lg px-5 py-2.5">
             MAP HERE!
           </button>
         </a>

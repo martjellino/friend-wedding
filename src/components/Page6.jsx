@@ -2,9 +2,9 @@
 
 import { AddWish } from "./AddWish";
 
-export const Page6 = async ({ name, wishes }) => {
+export const Page6 = ({ name, wishes }) => {
   return (
-    <div className="max-w-3xl m-auto svg-bg-6 bg-center bg-no-repeat h-screen p-4 text-center font-color font-bell">
+    <div className="w-full bg-image-6 bg-cover bg-center bg-no-repeat h-screen p-4 text-center font-color font-bell">
       <AddWish namewish={name} />
       <div className="mt-6"></div>
       <div className="max-w-sm space-y-2 overflow-y-auto h-72 block bg-#f5d5c7 border-#f0c4b1 mt-7">

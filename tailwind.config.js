@@ -25,9 +25,13 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "image-1": "url('/gambar1.png')",
+        "image-2": "url('/gambar2.png')",
+        "image-3": "url('/page-3.png')",
+        "image-4": "url('/page4.png')",
+        "image-5": "url('/gambar5.png')",
+        "image-6": "url('/last-page-01.png')",
+        "image-7": "url('/last-page-01.png')",
       },
     },
   },

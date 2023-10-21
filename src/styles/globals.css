@@ -5,7 +5,7 @@
 @layer base {
   @font-face {
     font-family: Bell MT;
-    src: url(bell-mt.ttf) format("ttf");
+    src: url(bell-mt.ttf) format("truetype"), url(bell-mt.eot) format("truetype"), url(bell-mt.otf) format("truetype"), url(bell-mt.woff) format("truetype"), url(bell-mt.woff2) format("truetype")
   }
 }
 
@@ -72,6 +72,10 @@
 
 .wallet {
   display: inline-block;
+}
+
+.all-bg {
+  background-image: url("/all-bg-new.png");
 }
 
 .bg-1 {
