@@ -32,7 +32,7 @@ export const Count = () => {
         className="flex w-20 p-2 bg-mallard-900 border rounded-lg shadow justify-center items-center  col-start-2"
       >
         <div className="flex-row">
-        <p className="text-5xl font-semibold tracking-tight text-white font-mono">{days}</p>
+        <p className="text-5xl font-extrabold tracking-tight text-white font-mono">{days}</p>
         <p className="font-normal text-white">Days</p>
         </div>
       </a>
