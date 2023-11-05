@@ -5,10 +5,12 @@ import { Page4 } from "@/components/Page4";
 import { Page5 } from "@/components/Page5";
 import { Page6 } from "@/components/Page6";
 import { Page7 } from "@/components/Page7";
+import { apiUrl } from "@/config/apiUrl";
 import Image from "next/image";
 
+
 async function getVisitorById(id) {
-  const res = await fetch(`https://the-wedding-of-ayu-rifqi.vercel.app/api/v1/visitor/${id}`, {
+  const res = await fetch(`${apiUrl}/api/v1/visitor/${id}`, {
     cache: "no-store",
   });
   const { data } = await res.json();
@@ -16,7 +18,7 @@ async function getVisitorById(id) {
 }
 
 async function getWishes() {
-  const res = await fetch("https://the-wedding-of-ayu-rifqi.vercel.app/api/v1/wish", {
+  const res = await fetch(`${apiUrl}/api/v1/wish`, {
     cache: "no-store",
   });
   const { data } = await res.json();
