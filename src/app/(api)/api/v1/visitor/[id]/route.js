@@ -2,7 +2,7 @@ import { prisma } from "@/utils/prisma";
 import { NextResponse } from "next/server";
 
 export async function GET(req, { params }) {
-  const { id } = params
+  const { id } = params;
   try {
     const visitor = await prisma.visitors.findFirst({
       where: {
@@ -12,12 +12,11 @@ export async function GET(req, { params }) {
     if (!visitor) {
       return NextResponse.json(
         {
-          data: {
-            name: "~Maaf, tak diundang~"
-          },
-          message: "Visitor is not found!",
+          message: "The visitor is not found!",
         },
-        { status: 404 }
+        {
+          status: 404,
+        }
       );
     }
     return NextResponse.json(
